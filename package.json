@@ -1,0 +1,30 @@
+{
+  "name": "projetos",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chrome-ext-downloader": "^1.0.4"
+  },
+  "devDependencies": {
+    "chrome-ext-downloader": "^1.0.4",
+    "cypress": "^7.2.0",
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "cypress-file-upload": "^4.1.1"
+  
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:install": "./node_modules/.bin/cypress install",
+    "download-extension": "ced gleekbfjekiniecknbkamfmkohkpodhe extensions/ignore-x-frame-headers"
+  },
+  "author": "",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/support/steps"
+  }
+}

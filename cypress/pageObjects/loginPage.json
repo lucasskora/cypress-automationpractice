@@ -1,0 +1,11 @@
+{
+"login":{
+    "emailText":"#email",
+    "passwordText":"#passwd",
+    "submitButton":"#SubmitLogin"
+},
+"register":{
+
+    
+}
+}
