@@ -1,7 +1,4 @@
-FROM cypress/base:12.16.3
-RUN mkdir /app
-WORKDIR /app
-COPY . /app
-RUN npm install
+FROM cypress/base:10
+RUN npm install --save-dev cypress
 RUN $(npm bin)/cypress verify
-RUN ["npm", "run", "cypress:run"]
+RUN $(npm bin)/cypress run

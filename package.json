@@ -5,13 +5,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-  "chrome-ext-downloader": "^1.0.4"
+    "chrome-ext-downloader": "^1.0.4"
   },
   "devDependencies": {
     "chrome-ext-downloader": "^1.0.4",
     "cypress": "^7.2.0",
     "cypress-cucumber-preprocessor": "^4.0.3"
-  
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
