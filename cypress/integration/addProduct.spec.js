@@ -17,6 +17,7 @@ describe('Validation Product', () => {
         cy.visit('http://automationpractice.com/index.php?controller=search&orderby=position&orderway=desc&search_query=Faded+Short+Sleeve+T-shirts&submit_search=')
       
       // Valida o endpoint chamado ao adicionar o produto no carrinho
+      
         // cy.intercept('GET', '/index.php?controller=search&q=faded+short+sleeve+t-shirts&limit=10&timestamp=1619665225314&ajaxSearch=1&id_lang=1', {
         //   statusCode: 200,
         //   isComplete: false
@@ -37,7 +38,7 @@ describe('Validation Product', () => {
         //     assert.isNotNull('Product_Cart')
         //   })   
 
-
+        //Valida as infos do produto adicionado no carrinho
         cy.get('.layer_cart_product > h2')
           .should('contain', 'Product successfully added to your shopping cart')
 
@@ -74,9 +75,10 @@ describe('Validation Product', () => {
         cy.get(':nth-child(4) > .ajax_block_cart_total')
           .should('contain', '$18.51')
 
-
+        //Fechar a modal do produto selecionado
         cy.get('.cross').click()
 
+        //Clica no botão para ir no carrinho
         cy.get('.cart_block').should('be.hidden').invoke('show')
         cy.get('#button_order_cart').click()
 

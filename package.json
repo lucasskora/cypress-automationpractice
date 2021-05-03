@@ -8,6 +8,7 @@
     "chrome-ext-downloader": "^1.0.4"
   },
   "devDependencies": {
+    "@types/node": "^15.0.1",
     "chrome-ext-downloader": "^1.0.4",
     "cypress": "^7.2.0",
     "cypress-cucumber-preprocessor": "^4.0.3"
